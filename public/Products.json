@@ -1,0 +1,27 @@
+[
+    {
+      "name": "Modern Sofa",
+      "price": 599.99,
+      "details": "Comfortable, stylish, 3-seat design",
+      "image": "https://images.pexels.com/photos/8135269/pexels-photo-8135269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    },
+    {
+      "name": "Wooden Dining Table",
+      "price": 299.99,
+      "details": "Durable, 6-seat capacity, rustic design",
+      "image": "https://img.freepik.com/free-vector/vector-dining-room-interior-with-round-brown-wooden-table-two-chairs-red-book-cups-coffee-tea-lamp-plant-pot-photo-frames-wall-isolated-white-background_1284-48474.jpg?t=st=1737392029~exp=1737395629~hmac=8178ea7202d0f91b4d53522808a31dec35121fda03aae4f3ef6468a39c1407c1&w=826"
+    },
+    {
+      "name": "Recliner Chair",
+      "price": 199.99,
+      "details": "Adjustable, padded, ergonomic design",
+      "image": "https://img.freepik.com/free-photo/attractive-fashionable-young-european-female-with-hair-bun-bare-feet-sitting-comfortably-pinkish-armchair-smiling-enjoying-spare-time-her-own-stylish-high-heeled-shoes-carpet_343059-4173.jpg?t=st=1737392124~exp=1737395724~hmac=bbec9fbd7ea8cbfcc8e0171e1b2f162b59d66164874656c167922b3b3f58fa62&w=1380"
+    },
+    {
+      "name": "Bookshelf",
+      "price": 99.99,
+      "details": "5 shelves, sturdy wood, modern style",
+      "image": "https://images.pexels.com/photos/2177482/pexels-photo-2177482.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    } 
+  ]
+  
