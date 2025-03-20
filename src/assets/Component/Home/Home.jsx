@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import food1 from "../../../Gallery/Food1.png"
 import food2 from "../../../Gallery/Food2.png"
 import food3 from "../../../Gallery/Food3.png"
@@ -11,10 +11,15 @@ import food9 from "../../../Gallery/Food9.png"
 import food10 from "../../../Gallery/Food10.png"
 import food11 from "../../../Gallery/Food11.png"
 import Hero from "../../../Gallery/bowdi.png"
-
 import "./Home.css"
+import Section2 from '../Section2/Section2'
+import Touch from '../Touch/Touch'
+
+
 
 export default function Home() {
+
+
   return (
     <div>
       <div id='/' className='relative bg-orange-200 all pt-24'>
@@ -68,8 +73,13 @@ export default function Home() {
         </div>
       </div>
       <div>
+        <Section2></Section2>
+        <Touch></Touch>
       </div>
     </div>
 
   )
 }
+
+
+

@@ -88,10 +88,10 @@ export default function DailyMenu() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className='absolute inset-0 flex justify-center items-center px-5 dailyButton'>
+        <div className='absolute inset-0 flex justify-center items-center px-5 daily'>
           <div className='bg-orange-300 bg-opacity-60 p-8 rounded'>
-            <h1 className='text-5xl lg:text-6xl daily text-orange-100 text-center font-semibold'>Bangladesh Food Club</h1>
-            <h1 className='text-3xl lg:text-4xl daily text-orange-100 font-semibold text-center my-2.5'>Daily Food Menu</h1>
+            <h1 className='text-4xl lg:text-5xl text-orange-50 text text-center special font-bold'>Bangladesh Food Club</h1>
+            <h1 className='text-3xl lg:text-4xl text-orange-50 text font-semibold special text-center my-2.5'>Daily Food Menu</h1>
             <div className="flex justify-center items-center">
               <button className="text-xl text-orange-100 bg-orange-500 border dailyButton font-medium rounded py-1.5 px-4 ">Order Now</button>
             </div>
@@ -101,7 +101,7 @@ export default function DailyMenu() {
 
 
       <div className="py-24 px-10 text-center bg-orange-200">
-        <h2 className="text-5xl font-bold daily text-orange-500">Bengali Food Menu</h2>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold daily text-orange-500">Daily Food Menu</h2>
         <div className='dailyButton my-8'> <button className="bg-orange-300 text-slate-800 font-bold text-xl px-10 py-2 w-max h-max rounded" onClick={() => handleSelectDay('All')}>
           All
         </button>

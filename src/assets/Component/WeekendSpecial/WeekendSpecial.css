@@ -1,0 +1,25 @@
+.weekend{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.text{
+    text-shadow: 1.3px 1.3px black;
+}
+
+.image {
+  position: relative;
+  bottom: 0;
+  transform: bottom 0.5s;
+}
+
+.back:hover .image {
+  bottom: 45px;
+}
+
+.show{
+  opacity: 0;
+}
+
+.back:hover .show{
+  opacity: 1;
+}
