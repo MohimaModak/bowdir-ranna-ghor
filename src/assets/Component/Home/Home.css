@@ -1,30 +1,218 @@
-h1{
-    position: relative;
-    font-size: 14vw;
-    color: rgb(0, 0, 0);
-    /* -webkit-text-stroke: 0.3vw white; */
-    text-transform: uppercase;
-}
-
-h1::before{
-    content: attr(data-text);
+.wrapper {
+    position: relative; /* Keep relative positioning */
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .box {
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
-    width: 0;
-    height: 100%;
-    color: rgb(18, 167, 167);
-    -webkit-text-stroke: 0vw #383d52;
-    border-right: 2px solid lightcyan;
-    overflow: hidden;
-    animation: animate 2s linear infinite;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none; /* Prevent interaction with the animated elements */
+  }
+  
+  .box div {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border: 6px solid transparent;
+    border-radius: 5px;
+    background-size: 400% 400%;
+    animation: borderGradient 6s ease infinite, animate 10s linear infinite;
 }
 
-@keyframes animate{
-    0%,10%,100%{
-        width: 0;
-    }
-    70%,90%{
-        width: 21%;
-    }
+.box div:nth-child(1) {
+    top: 12%;
+    left: 42%;
+    animation: animate 10s linear infinite, borderGradient 10s ease infinite;
 }
+
+.box div:nth-child(2) {
+    top: 70%;
+    left: 50%;
+    animation: animate 7s linear infinite, borderGradient 7s ease infinite;
+}
+
+.box div:nth-child(3) {
+    top: 17%;
+    left: 6%;
+    animation: animate 9s linear infinite, borderGradient 9s ease infinite;
+}
+
+.box div:nth-child(4) {
+    top: 20%;
+    left: 60%;
+    animation: animate 10s linear infinite, borderGradient 10s ease infinite;
+}
+
+.box div:nth-child(5) {
+    top: 67%;
+    left: 10%;
+    animation: animate 6s linear infinite, borderGradient 6s ease infinite;
+}
+
+.box div:nth-child(6) {
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite, borderGradient 12s ease infinite;
+}
+
+.box div:nth-child(7) {
+    top: 80%;
+    left: 70%;
+    animation: animate 12s linear infinite, borderGradient 12s ease infinite;
+}
+
+.box div:nth-child(8) {
+    top: 32%;
+    left: 65%;
+    animation: animate 16s linear infinite, borderGradient 16s ease infinite;
+}
+
+.box div:nth-child(9) {
+    top: 20%;
+    left: 85%;
+    animation: animate 9s linear infinite, borderGradient 9s ease infinite;
+}
+.box div:nth-child(10) {
+    top: 100%;
+    left: 45%;
+    animation: animate 12s linear infinite, borderGradient 9s ease infinite;
+}
+.box div:nth-child(11) {
+    top: 150%;
+    left: 58%;
+    animation: animate 9s linear infinite, borderGradient 9s ease infinite;
+}
+.box div:nth-child(12) {
+    top: 60%;
+    left: 25%;
+    animation: animate 15s linear infinite, borderGradient 9s ease infinite;
+}
+.box div:nth-child(13) {
+    top: 70%;
+    left: 65%;
+    animation: animate 14s linear infinite, borderGradient 9s ease infinite;
+}
+.box div:nth-child(14) {
+    top: 80%;
+    left: 25%;
+    animation: animate 19s linear infinite, borderGradient 9s ease infinite;
+}
+.box div:nth-child(15) {
+    top: 90%;
+    left: 48%;
+    animation: animate 12s linear infinite, borderGradient 9s ease infinite;
+}
+.box div:nth-child(16) {
+    top: 30%;
+    left: 25%;
+    animation: animate 4s linear infinite, borderGradient 9s ease infinite;
+}
+
+.box div:nth-child(10) {
+    top: 90%;
+    left: 85%;
+    animation: animate 5s linear infinite, borderGradient 5s ease infinite;
+}
+
+/* @keyframes animate {
+    0% {
+        transform: scale(0) translateY(0) rotate(0);
+        opacity: 10;
+    }
+
+    100% {
+        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        opacity: 0;
+    }
+} */
+
+@keyframes borderGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+} 
+  
+  .absolute {
+    position: absolute;
+    z-index: 20; /* Ensures text content appears above the animation */
+  }
+  
+  .relative {
+    position: relative;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+
+  
+  .rotated {
+    animation: rotateYAndMove 3s infinite ease-in-out; /* Smooth up and down with rotation */
+    transform-origin: center; /* Ensure it rotates around the center */
+  }
+
+  .food{
+    font-family: 'Times New Roman', Times, serif
+  }
+
+  .all{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+.btn{
+  border: 3.5px solid rgb(236, 115, 44);
+  background-color: none;
+  padding: 2px 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  cursor: pointer;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+.btn1:hover{
+  color: rgb(247, 243, 236);
+}
+
+.btn::before{
+content: "";
+position: absolute;
+left: 0;
+width: 100%;
+height: 1px;
+background-color: rgb(252, 119, 71);
+z-index: -1;
+}
+
+.btn1::before{
+  top: 0%;
+  border-radius: 0 0 50% 50%;
+  transition: 0.2s;
+}
+
+.btn1:hover::before{
+  height: 180%;
+  border-radius: 100%;
+}
+  
+  
+  
+  
+ 
+  
