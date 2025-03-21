@@ -1,5 +1,3 @@
-
-
 import React, { useEffect } from 'react';
 import mailImg from "../../../Gallery/facebook.png"
 import phoneImg from "../../../Gallery/whatsapp.png"
