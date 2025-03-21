@@ -17,7 +17,7 @@ import Section from '../Section/Section'
 import Testimonial from '../Testimonial/Testimonial'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import AllMenu from '../AllMenu/AllMenu'
+// import AllMenu from '../AllMenu/AllMenu'
 export default function Home() {
 
    useEffect(() => {
@@ -87,7 +87,7 @@ export default function Home() {
         {/* <Touch></Touch> */}
         <Section></Section>
         <Testimonial></Testimonial>
-        <AllMenu></AllMenu>
+        {/* <AllMenu></AllMenu> */}
       </div>
     </div>
 
