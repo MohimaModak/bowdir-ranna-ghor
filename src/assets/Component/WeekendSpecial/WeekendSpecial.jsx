@@ -9,6 +9,7 @@ import chinigura from "../../../Gallery/chinigura.jpg"
 import "./WeekendSpecial.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Food from "../../../Gallery/Food7.png"
 
 
 const dessertMenu = [
@@ -68,12 +69,8 @@ export default function WeekendSpecial() {
       AOS.refresh();
     }, []);
 
-
-
-
-
   return (
-    <div id='/WeekendSpecial' className="relative weekend bg-orange-200 ">
+    <div id='/WeekendSpecial' className="relative weekend bg-orange-100">
 
       <div className='relative'>
         <div data-aos="zoom-out" className="relative">
@@ -101,7 +98,12 @@ export default function WeekendSpecial() {
       </div>
 
       <div className='p-8 lg:px-24 py-20'>
-        <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold daily text-orange-500">Weekend Special</h2>
+        
+       <div className='flex justify-center items-center'>  
+        <span> <img src={Food} className='w-16' /></span> 
+        <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold daily text-orange-500">Weekend Special</h2><span> <img src={Food} className='w-16' />
+        </span>
+       </div>
 
         <p className='text-slate-800 text-center mt-4  text-lg font-semibold'>Confirm your order and enjoy your meal. Don't forget to share you experience</p>
 
@@ -118,9 +120,9 @@ export default function WeekendSpecial() {
                     />
                   </div>
                   <div className=" text-center">
-                    <p className="text-slate-800 font-semibold text-xl my-2">{dessertItem.price}</p>
+                    <p className="text-orange-500 font-semibold text-xl my-2">{dessertItem.price}</p>
                     <h3 className="text-orange-500 font-semibold  text-xl show">{dessertItem.name}</h3>
-                    <a href="/Touch" ><button className="text-lg show text-slate-800 bg-orange-500 font-semibold rounded mt-3 py-1.5 px-3">
+                    <a href="/Touch" ><button className="text-lg show text-slate-100 bg-orange-500 font-semibold rounded mt-3 py-1.5 px-3">
                       Order Now
                     </button>
                     </a>

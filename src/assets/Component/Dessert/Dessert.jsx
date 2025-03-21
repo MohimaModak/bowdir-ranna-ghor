@@ -8,6 +8,7 @@ import Faluda from "../../../Gallery/Faluda.jpg";
 import "./Dessert.css";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Food from "../../../Gallery/food12.png"
 
 
 const menu = {
@@ -106,7 +107,16 @@ export default function Dessert() {
 
 
       <div data-aos="zoom-out" className="p-8 lg:px-24 py-20 text-center bg-orange-200">
-        <h2 data-aos="zoom-out" className="text-4xl md:text-5xl lg:text-6xl font-bold daily text-orange-500">Dessert Menu</h2>
+
+
+
+
+
+         <div data-aos="zoom-out" className='flex justify-center items-center'>  
+                <span> <img src={Food} className='w-16' /></span> 
+                <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold daily text-orange-500">Dessert Menu</h2><span> <img src={Food} className='w-16' />
+                </span>
+               </div>
 
 
         <div className="flex justify-center items-center">

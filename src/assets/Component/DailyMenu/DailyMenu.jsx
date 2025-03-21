@@ -11,36 +11,37 @@ import macherjhol from "../../../Gallery/macherjhol.webp"
 import "./DailyMenu.css"
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Food from "../../../Gallery/Food9.png"
 
 
 const menu = {
   Monday: [
-    { name: 'Vat + Dim vuna + Vaji + Mach er torkari', image: dim, meal: 'Lunch + Dinner', price: '150 DKK', Description: '2 bela vat er sathe 2ta torkari' },
-    
+    { name: 'Vat + Dim vuna + Vaji + Mach er torkari', image: dim, meal: 'Lunch + Dinner', price: '30 DKK', Description: '2 bela vat er sathe 2ta torkari' },
+
   ],
   Tuesday: [
-    { name: 'Vat + Murgi + Sobji', image: chickencurry, meal: 'Lunch + Dinner', price: '120 DKK', Description: '2 bela vat er sathe murgi ek bela, sobji ek bela' },
-    
+    { name: 'Vat + Murgi + Sobji', image: chickencurry, meal: 'Lunch + Dinner', price: '60 DKK', Description: '2 bela vat er sathe murgi ek bela, sobji ek bela' },
+
   ],
   Wednesday: [
-    { name: 'Vat + Vaji + Mach er torkari + Dal', image: machvuna, meal: 'Lunch + Dinner', price: '100 DKK', Description: '2 bela vat er sathe alo vaji, dal, mach ek bela' },
-  
+    { name: 'Vat + Vaji + Mach er torkari + Dal', image: machvuna, meal: 'Lunch + Dinner', price: '50 DKK', Description: '2 bela vat er sathe alo vaji, dal, mach ek bela' },
+
   ],
   Thursday: [
-    { name: 'Vat + Mach er torkari  ba vuna + Dal', image: fishcurry, meal: 'Lunch + Dinner', price: '140 DKK', Description: '2 bela vat er sathe mach er torkari ek bela, dim ek bela' },
- 
+    { name: 'Vat + Mach er torkari  ba vuna + Dal', image: fishcurry, meal: 'Lunch + Dinner', price: '45 DKK', Description: '2 bela vat er sathe mach er torkari ek bela, dim ek bela' },
+
   ],
   Friday: [
-    { name: 'Vat + Mangsho + Sobji', image: magnshotorkari, meal: 'Lunch + Dinner', price: '300 DKK', Description: '2 bela vat er sathe ek bela murgi, ek bela sobji' },
-  
+    { name: 'Vat + Mangsho + Sobji', image: magnshotorkari, meal: 'Lunch + Dinner', price: '65 DKK', Description: '2 bela vat er sathe ek bela murgi, ek bela sobji' },
+
   ],
   Saturday: [
-    { name: 'Dim khichuri + Begun vaji', image: khichuri, meal: 'Lunch + Dinner', price: '280 DKK', Description: 'Khichurir sathe 2ta dim vuna 2 belar jonno' },
-   
+    { name: 'Dim khichuri + Begun vaji', image: khichuri, meal: 'Lunch + Dinner', price: '40 DKK', Description: 'Khichurir sathe 2ta dim vuna 2 belar jonno' },
+
   ],
   Sunday: [
-    { name: 'Vat + Vaji + Mach er torkari + Dal', image: macherjhol, meal: 'Lunch + Dinner', price: '320 DKK', Description: '2 bela vat er sathe alo vaji o dal ek bela, mach ek bela' },
-    
+    { name: 'Vat + Vaji + Mach er torkari + Dal', image: macherjhol, meal: 'Lunch + Dinner', price: '45 DKK', Description: '2 bela vat er sathe alo vaji o dal ek bela, mach ek bela' },
+
   ]
 };
 
@@ -84,17 +85,17 @@ export default function DailyMenu() {
   }, [isPlaying]);
 
   useEffect(() => {
-      AOS.init({
-        duration: 1500,
-        easing: 'ease-out',
-        once: true,
-        delay: 100,
-      });
-      AOS.refresh();
-    }, []);
+    AOS.init({
+      duration: 1500,
+      easing: 'ease-out',
+      once: true,
+      delay: 100,
+    });
+    AOS.refresh();
+  }, []);
 
   return (
-    <div id="/DailyMenu" className="relative">
+    <div id="/DailyMenu" className="relative ">
 
       <div className='relative'>
         <div data-aos="zoom-out" className="relative">
@@ -120,8 +121,9 @@ export default function DailyMenu() {
       </div>
 
 
-      <div data-aos="zoom-out" className="p-8 lg:px-24 py-20 text-center bg-orange-200">
-        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold daily text-orange-500">Daily Food Menu</h2>
+      <div data-aos="zoom-out" className="p-8 lg:px-24 py-20 text-center bg-orange-100">
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold daily text-orange-500 flex justify-center items-center"><span>Dailyood Menu</span> <span><img src={Food} className='w-16' />
+        </span></h2>
         <div className='dailyButton my-8'> <button className="bg-orange-300 text-slate-800 font-bold text-xl px-10 py-2 w-max h-max rounded" onClick={() => handleSelectDay('All')}>
           All
         </button>
@@ -131,7 +133,7 @@ export default function DailyMenu() {
                 {Object.keys(menu).map((day) => (
                   <button
                     key={day}
-                    className={`text-orange-600 font-bold text-xl px-10 py-2 text-center rounded ${selectedDay === day ? 'bg-orange-300 text-orange-600' : 'bg-orange-300 text-slate-800'}`}
+                    className={`text-orange-600 font-bold text-xl px-10 py-2 text-center rounded ${selectedDay === day ? 'bg-orange-300 text-slate-800' : 'bg-orange-200 text-slate-800'}`}
                     onClick={() => handleSelectDay(day)}
                   >
                     {day}
@@ -145,21 +147,21 @@ export default function DailyMenu() {
         <div className="flex justify-center items-center">
           <div className="mt-6 grid-cols-1 md:grid-cols-2 grid lg:grid-cols-4 gap-10">
             {(selectedDay === 'All' ? Object.keys(menu).flatMap(day => menu[day]) : menu[selectedDay]).map((item, index) => (
-              <div key={index} className="relative bg-orange-300 rounded-md overflow-hidden">
+              <div key={index} className="relative rounded-md overflow-hidden">
                 <img src={item.image} className="rounded-t-md w-full h-60 object-cover" />
 
-                <div className="absolute inset-0 text-slate-800 hover:bg-orange-300 hover:bg-opacity-80 hover:opacity-100 flex flex-col justify-center items-center p-4 text-center transition-all duration-1000 ease-in-out dailyButton">
+                <div className="absolute inset-0 text-slate-800 hover:bg-orange-200 hover:bg-opacity-80 hover:opacity-100 flex flex-col justify-center items-center p-4 text-center transition-all duration-1000 ease-in-out dailyButton">
                   <div className='hover:opacity-100 opacity-0 transition-all duration-1000 ease-in-out'>
                     <h3 className="text-slate-800 font-semibold text-xl">{item.name}</h3>
                     <h3 className="text-slate-800 font-semibold text-base my-1">{item.Description}</h3>
                     <h3 className="text-slate-800 font-semibold text-xl my-1">{item.meal}</h3>
-                    <a href="/Touch" >  <button className="text-lg text-slate-800 bg-orange-400 font-semibold rounded mt-3 py-1.5 px-3">
+                    <a href="/Touch" >  <button className="text-lg text-slate-800 bg-orange-100 font-semibold rounded mt-3 py-1.5 px-3">
                       Order Now
                     </button>
                     </a>
                   </div>
                 </div>
-                <p className="text-slate-800 font-semibold text-xl my-2">Price: {item.price}</p>
+                <p className="text-orange-600 font-semibold text-2xl my-2">Price: {item.price}</p>
               </div>
             ))}
           </div>

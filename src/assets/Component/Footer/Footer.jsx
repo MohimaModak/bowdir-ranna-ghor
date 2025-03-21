@@ -5,7 +5,7 @@ import phoneImg from "../../../Gallery/whatsapp.png"
 export default function Footer() {
   return (
     <footer className="bg-orange-300 text-gray-700 py-10">
-      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div data-aos="fade-up" className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
 
         {/* Company Info */}
         <div>
@@ -34,7 +34,7 @@ export default function Footer() {
             <div data-aos="fade-up" className="flex items-center gap-4">
               <a href="https://www.facebook.com/share/1U5rMpn6TL/">  <img src={mailImg} alt="Mail" className="w-8" /></a>
             </div>
-            <div className="flex items-center gap-4">
+            <div data-aos="fade-up" className="flex items-center gap-4">
               <a href="tel:+4571597652">
                 <img src={phoneImg} alt="Phone" className="w-8" />
               </a>
