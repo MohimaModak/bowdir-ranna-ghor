@@ -149,7 +149,7 @@ export default function DailyMenu() {
             {(selectedDay === 'All' ? Object.keys(menu).flatMap(day => menu[day]) : menu[selectedDay]).map((item, index) => (
               <div key={index} className="relative rounded-md overflow-hidden">
                 <img src={item.image} className="rounded-t-md w-full h-60 object-cover" />
-                <div className="absolute inset-0 text-slate-800 bottom-0 left-0 w-full h-full hover:bg-gradient-to-t from-green-700 to-transparent hover:backdrop-blur-sm flex flex-col justify-center items-center p-4 text-center transition-all duration-1000 ease-in-out dailyButton">
+                <div className="absolute inset-0 text-slate-800 bottom-0 left-0 w-full h-full hover:bg-gradient-to-t from-transparent to-green-800 hover:backdrop-blur-sm flex flex-col justify-center items-center p-4 text-center transition-all duration-1000 ease-in-out dailyButton">
                   <div className='hover:opacity-100 opacity-0 transition-all duration-1000 ease-in-out'>
                     <h3 className="text-slate-100 font-semibold text-xl">{item.name}</h3>
                     <h3 className="text-slate-100 font-semibold text-base my-1">{item.Description}</h3>
