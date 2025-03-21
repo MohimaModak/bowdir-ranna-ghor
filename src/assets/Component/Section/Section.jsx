@@ -57,9 +57,11 @@ export default function Section() {
                 <div className='text-center lg:text-left lg:w-1/2'>
                     <h1 className='text-4xl md:text-4xl lg:text-5xl font-bold text-orange-600'>Weekend Special                    </h1>
                     <p className='my-5'>If you're looking to place an order, simply click on the 'Order' button and head over to the 'Daily Menu' option. Here, you'll find a wide variety of dishes to choose from, each made with the freshest ingredients. Our menu offers something for everyone, whether you're in the mood for a quick snack or a full meal. You can be sure that every dish is prepared with care and is guaranteed to satisfy your taste buds. So go ahead, place your order, and enjoy a delightful and diverse range of meals delivered right to your door!</p>
-                    <div className=' flex justify-center items-center lg:block'><div className="container relative text-orange-600 border-2 px-5 py-1 border-orange-600 w-max  text-xl md:text-2xl font-medium mb-5 lg:mb-0">
+                    <div className=' flex justify-center items-center lg:block'>
+                        <div className="container relative text-orange-600 border-2 px-5 py-1 border-orange-600 w-max  text-xl md:text-2xl font-medium mb-5 lg:mb-0">
                         <a href="/DailyMenu"><button className='button rounded'>Order Now</button></a>
-                    </div></div>
+                    </div>
+                    </div>
                 </div>
                 <div className="slider-container relative max-w-3xl mx-auto overflow-hidden">
                     {/* Image with overlay content */}

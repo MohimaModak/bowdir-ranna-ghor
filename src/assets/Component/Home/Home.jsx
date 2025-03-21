@@ -18,6 +18,7 @@ import Testimonial from '../Testimonial/Testimonial'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Highlights from '../Highlights/Highlights'
+import Choose from '../Choose/Choose'
 
 
 export default function Home() {
@@ -85,8 +86,8 @@ export default function Home() {
         </div>
       </div>
       <div>
+        <Choose></Choose>
         <Section2></Section2>
-        {/* <Touch></Touch> */}
         <Section></Section>
         <Highlights></Highlights>
         <Testimonial></Testimonial>
