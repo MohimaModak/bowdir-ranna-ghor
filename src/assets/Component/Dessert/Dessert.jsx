@@ -82,7 +82,7 @@ export default function Dessert() {
     <div id='/Dessert' className="relative">
 
       <div className='relative'>
-        <div data-aos="zoom-out" className="relative">
+        <div data-aos="fade-up" className="relative">
           <video
             ref={videoRef}
             src={video}
@@ -106,13 +106,13 @@ export default function Dessert() {
       </div>
 
 
-      <div data-aos="zoom-out" className="p-8 lg:px-24 py-20 text-center bg-orange-200">
+      <div data-aos="fade-up" className="p-8 lg:px-24 py-20 text-center bg-orange-200">
 
 
 
 
 
-         <div data-aos="zoom-out" className='flex justify-center items-center'>  
+         <div data-aos="fade-up" className='flex justify-center items-center'>  
                 <span> <img src={Food} className='w-16' /></span> 
                 <h2 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold daily text-orange-500">Dessert Menu</h2><span> <img src={Food} className='w-16' />
                 </span>

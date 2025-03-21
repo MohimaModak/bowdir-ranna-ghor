@@ -73,7 +73,7 @@ export default function WeekendSpecial() {
     <div id='/WeekendSpecial' className="relative weekend bg-orange-100">
 
       <div className='relative'>
-        <div data-aos="zoom-out" className="relative">
+        <div data-aos="fade-up" className="relative">
           <video
             ref={videoRef}
             src={video}
@@ -84,7 +84,7 @@ export default function WeekendSpecial() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div data-aos="zoom-out" className='absolute inset-0 flex justify-center items-center px-5 weekend'>
+        <div data-aos="fade-up" className='absolute inset-0 flex justify-center items-center px-5 weekend'>
           <div className='bg-orange-300 bg-opacity-60 p-8 rounded'>
             <h1 className='text-4xl lg:text-5xl text-orange-50 text text-center special font-bold'>Bangladesh Food Club</h1>
             <h1 className='text-3xl lg:text-4xl text-orange-50 text font-semibold special text-center my-2.5'>Weekend Special</h1>

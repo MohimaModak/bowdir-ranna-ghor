@@ -98,7 +98,7 @@ export default function DailyMenu() {
     <div id="/DailyMenu" className="relative ">
 
       <div className='relative'>
-        <div data-aos="zoom-out" className="relative">
+        <div data-aos="fade-up" className="relative">
           <video
             ref={videoRef}
             src={video}
@@ -109,7 +109,7 @@ export default function DailyMenu() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div data-aos="zoom-out" className='absolute inset-0 flex justify-center items-center px-5 daily'>
+        <div data-aos="fade-up" className='absolute inset-0 flex justify-center items-center px-5 daily'>
           <div className='bg-orange-300 bg-opacity-60 p-8 rounded'>
             <h1 className='text-4xl lg:text-5xl text-orange-50 text text-center special font-bold'>Bangladesh Food Club</h1>
             <h1 className='text-3xl lg:text-4xl text-orange-50 text font-semibold special text-center my-2.5'>Daily Food Menu</h1>
@@ -121,7 +121,7 @@ export default function DailyMenu() {
       </div>
 
 
-      <div data-aos="zoom-out" className="p-8 lg:px-24 py-20 text-center bg-orange-100">
+      <div data-aos="fade-up" className="p-8 lg:px-24 py-20 text-center bg-orange-100">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold daily text-orange-500 flex justify-center items-center"><span>Dailyood Menu</span> <span><img src={Food} className='w-16' />
         </span></h2>
         <div className='dailyButton my-8'> <button className="bg-orange-300 text-slate-800 font-bold text-xl px-10 py-2 w-max h-max rounded" onClick={() => handleSelectDay('All')}>

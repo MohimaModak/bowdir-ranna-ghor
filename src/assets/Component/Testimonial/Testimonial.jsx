@@ -21,7 +21,7 @@ export default function Testimonial() {
 
   return (
     <div id='/Testimonial' className="p-8 lg:px-24 py-16 relative bg-orange-200 testimonal">
-     <div data-aos="zoom-out">
+     <div data-aos="fade-up">
       <div className="max-w-4xl mx-auto text-center">
         <p className="text-4xl md:text-4xl lg:text-5xl font-bold text-orange-600">Our Testimonials</p>
         <h2 className="mt-4 text-2xl lg:text-3xl font-bold text-slate-800 ">What Our Clients Say</h2>

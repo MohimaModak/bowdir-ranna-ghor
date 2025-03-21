@@ -18,7 +18,7 @@ export default function Choose() {
     }, []);
     return (
         <section className="p-8 lg:px-24 py-16 relative bg-orange-100 choose">
-            <div data-aos="zoom-out" className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div data-aos="fade-up" className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                 {/* Left Side - Heading & Text */}
                 <div>
                     <h2 className="text-4xl md:text-4xl lg:text-5xl font-bold text-orange-600">

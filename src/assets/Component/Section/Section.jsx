@@ -53,7 +53,7 @@ export default function Section() {
 
     return (
         <div className=" p-8 lg:px-24 py-16 relative bg-orange-100 w-full overflow-hidden section">
-            <div data-aos="zoom-out" className='lg:flex justify-center items-center gap-5'>
+            <div data-aos="fade-up" className='lg:flex justify-center items-center gap-5'>
                 <div className='text-center lg:text-left lg:w-1/2'>
                     <h1 className='text-4xl md:text-4xl lg:text-5xl font-bold text-orange-600'>Weekend Special                    </h1>
                     <p className='my-5'>If you're looking to place an order, simply click on the 'Order' button and head over to the 'Daily Menu' option. Here, you'll find a wide variety of dishes to choose from, each made with the freshest ingredients. Our menu offers something for everyone, whether you're in the mood for a quick snack or a full meal. You can be sure that every dish is prepared with care and is guaranteed to satisfy your taste buds. So go ahead, place your order, and enjoy a delightful and diverse range of meals delivered right to your door!</p>

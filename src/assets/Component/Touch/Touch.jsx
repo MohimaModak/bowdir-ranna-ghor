@@ -54,7 +54,7 @@ export default function Touch() {
         </div>
       </div>
       <div>
-        <div data-aos="zoom-out" className="max-w-7xl mx-auto">
+        <div data-aos="fade-up" className="max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-5">
             <h2 className='text-4xl md:text-4xl lg:text-5xl font-bold text-orange-600'>

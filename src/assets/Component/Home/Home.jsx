@@ -36,7 +36,7 @@ export default function Home() {
   return (
     <div>
       <div id='/' className='relative bg-orange-200 all pt-24'>
-        <div data-aos="zoom-out" className='relative  h-screen'>
+        <div data-aos="fade-up" className='relative h-screen'>
           <div className='relative '>
             <div className='wrapper absolute inset-0  h-screen w-full '>
               <div className='box opacity-10 lg:opacity-30'>
