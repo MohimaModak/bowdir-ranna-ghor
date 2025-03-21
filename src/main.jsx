@@ -13,26 +13,38 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
+
     children: [
       {
         path: "/",
-        element: <Home></Home>,
+        // element: <Home></Home>,
+        element: <div>Homee</div>,
+
       },
+
       {
         path: "/DailyMenu",
-        element: <DailyMenu></DailyMenu>,
+        // element: <DailyMenu></DailyMenu>,
+        element: <div>Daily Menu</div>,
+
       },
       {
         path: "/WeekendSpecial",
-        element: <WeekendSpecial></WeekendSpecial>,
+        // element: <WeekendSpecial></WeekendSpecial>,
+        element: <div>Weekend Special</div>,
+
       },
       {
         path: "/Dessert",
-        element: <Dessert></Dessert>,
+        // element: <Dessert></Dessert>,
+        element: <div>Dessert</div>,
+
       },
       {
         path: "/Touch",
-        element: <Touch></Touch>,
+        // element: <Touch></Touch>,
+        element: <div>Touch</div>,
+
       },
     ],
   },
