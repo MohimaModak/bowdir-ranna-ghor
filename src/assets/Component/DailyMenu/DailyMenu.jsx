@@ -1,36 +1,46 @@
 import React, { useRef, useEffect, useState } from 'react'
 import video from "../../../Gallery/video1.mp4"
 import daily from "../../../Gallery/menu.jpeg"
+import dim from "../../../Gallery/dimvuna.jpg"
+import chickencurry from "../../../Gallery/chickencurry.jpg"
+import fishcurry from "../../../Gallery/fishcurry.jpg"
+import machvuna from "../../../Gallery/machvuna.jpg"
+import magnshotorkari from "../../../Gallery/magnshotorkari.jpg"
+import khichuri from "../../../Gallery/khichuri.jpg"
+import macherjhol from "../../../Gallery/macherjhol.webp"
 import "./DailyMenu.css"
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 
 const menu = {
   Monday: [
-    { name: 'Vat + Dim vuna + Vaji + Mach er torkari', image: daily, meal: 'Lunch', price: '150 DKK', Description: '2 bela vat er sathe 2ta torkari' },
-    { name: 'Vat + Dim vuna + Vaji + Mach er torkari', image: daily, meal: 'Dinner', price: '100 DKK', Description: '2 bela vat er sathe 2ta torkari' }
+    { name: 'Vat + Dim vuna + Vaji + Mach er torkari', image: dim, meal: 'Lunch + Dinner', price: '150 DKK', Description: '2 bela vat er sathe 2ta torkari' },
+    
   ],
   Tuesday: [
-    { name: 'Vat + Murgi + Sobji', image: daily, meal: 'Lunch', price: '120 DKK', Description: '2 bela vat er sathe 2ta torkari' },
-    { name: 'Vat + Murgi + Sobji', image: daily, meal: 'Dinner', price: '180 DKK', Description: '2 bela vat er sathe 2ta torkari' }
+    { name: 'Vat + Murgi + Sobji', image: chickencurry, meal: 'Lunch + Dinner', price: '120 DKK', Description: '2 bela vat er sathe murgi ek bela, sobji ek bela' },
+    
   ],
   Wednesday: [
-    { name: 'Vat + Vaji + Mach er torkari + Dal', image: daily, meal: 'Lunch', price: '100 DKK', Description: '2 bela vat er sathe 2ta torkari' },
-    { name: 'Vat + Vaji + Mach er torkari + Dal', image: daily, meal: 'Dinner', price: '220 DKK', Description: '2 bela vat er sathe 2ta torkari' }
+    { name: 'Vat + Vaji + Mach er torkari + Dal', image: machvuna, meal: 'Lunch + Dinner', price: '100 DKK', Description: '2 bela vat er sathe alo vaji, dal, mach ek bela' },
+  
   ],
   Thursday: [
-    { name: 'Vat + Mach er torkari  ba vuna + Dal', image: daily, meal: 'Lunch', price: '140 DKK', Description: '2 bela vat er sathe 2ta torkari' },
-    { name: 'Vat + Mach er torkari  ba vuna + Dal', image: daily, meal: 'Dinner', price: '150 DKK', Description: '2 bela vat er sathe 2ta torkari' }
+    { name: 'Vat + Mach er torkari  ba vuna + Dal', image: fishcurry, meal: 'Lunch + Dinner', price: '140 DKK', Description: '2 bela vat er sathe mach er torkari ek bela, dim ek bela' },
+ 
   ],
   Friday: [
-    { name: 'Vat + Mangsho + Sobji', image: daily, meal: 'Lunch', price: '300 DKK', Description: '2 bela vat er sathe 2ta torkari' },
-    { name: 'Vat + Mangsho + Sobji', image: daily, meal: 'Dinner', price: '350 DKK', Description: '2 bela vat er sathe 2ta torkari' }
+    { name: 'Vat + Mangsho + Sobji', image: magnshotorkari, meal: 'Lunch + Dinner', price: '300 DKK', Description: '2 bela vat er sathe ek bela murgi, ek bela sobji' },
+  
   ],
   Saturday: [
-    { name: 'Dim khichuri + Begun vaji', image: daily, meal: 'Lunch', price: '280 DKK', Description: '2 bela vat er sathe 2ta torkari' },
-    { name: 'Dim khichuri + Begun vaji', image: daily, meal: 'Dinner', price: '200 DKK', Description: '2 bela vat er sathe 2ta torkari' }
+    { name: 'Dim khichuri + Begun vaji', image: khichuri, meal: 'Lunch + Dinner', price: '280 DKK', Description: 'Khichurir sathe 2ta dim vuna 2 belar jonno' },
+   
   ],
   Sunday: [
-    { name: 'Vat + Vaji + Mach er torkari + Dal', image: daily, meal: 'Lunch', price: '320 DKK', Description: '2 bela vat er sathe 2ta torkari' },
-    { name: 'Vat + Vaji + Mach er torkari + Dal', image: daily, meal: 'Dinner', price: '400 DKK', Description: '2 bela vat er sathe 2ta torkari' }
+    { name: 'Vat + Vaji + Mach er torkari + Dal', image: macherjhol, meal: 'Lunch + Dinner', price: '320 DKK', Description: '2 bela vat er sathe alo vaji o dal ek bela, mach ek bela' },
+    
   ]
 };
 
@@ -73,11 +83,21 @@ export default function DailyMenu() {
     };
   }, [isPlaying]);
 
+  useEffect(() => {
+      AOS.init({
+        duration: 1500,
+        easing: 'ease-out',
+        once: true,
+        delay: 100,
+      });
+      AOS.refresh();
+    }, []);
+
   return (
-    <div className="relative">
+    <div id="/DailyMenu" className="relative">
 
       <div className='relative'>
-        <div className="relative">
+        <div data-aos="zoom-out" className="relative">
           <video
             ref={videoRef}
             src={video}
@@ -88,19 +108,19 @@ export default function DailyMenu() {
             style={{ objectFit: "cover" }}
           />
         </div>
-        <div className='absolute inset-0 flex justify-center items-center px-5 daily'>
+        <div data-aos="zoom-out" className='absolute inset-0 flex justify-center items-center px-5 daily'>
           <div className='bg-orange-300 bg-opacity-60 p-8 rounded'>
             <h1 className='text-4xl lg:text-5xl text-orange-50 text text-center special font-bold'>Bangladesh Food Club</h1>
             <h1 className='text-3xl lg:text-4xl text-orange-50 text font-semibold special text-center my-2.5'>Daily Food Menu</h1>
             <div className="flex justify-center items-center">
-              <button className="text-xl text-orange-100 bg-orange-500 border dailyButton font-medium rounded py-1.5 px-4 ">Order Now</button>
+              <a href="/Touch"> <button className="text-xl text-orange-100 bg-orange-500 border dailyButton font-medium rounded py-1.5 px-4 ">Order Now</button></a>
             </div>
           </div>
         </div>
       </div>
 
 
-      <div className="py-24 px-10 text-center bg-orange-200">
+      <div data-aos="zoom-out" className="p-8 lg:px-24 py-20 text-center bg-orange-200">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold daily text-orange-500">Daily Food Menu</h2>
         <div className='dailyButton my-8'> <button className="bg-orange-300 text-slate-800 font-bold text-xl px-10 py-2 w-max h-max rounded" onClick={() => handleSelectDay('All')}>
           All
@@ -133,9 +153,10 @@ export default function DailyMenu() {
                     <h3 className="text-slate-800 font-semibold text-xl">{item.name}</h3>
                     <h3 className="text-slate-800 font-semibold text-base my-1">{item.Description}</h3>
                     <h3 className="text-slate-800 font-semibold text-xl my-1">{item.meal}</h3>
-                    <button className="text-lg text-slate-800 bg-orange-400 font-semibold rounded mt-3 py-1.5 px-3">
+                    <a href="/Touch" >  <button className="text-lg text-slate-800 bg-orange-400 font-semibold rounded mt-3 py-1.5 px-3">
                       Order Now
                     </button>
+                    </a>
                   </div>
                 </div>
                 <p className="text-slate-800 font-semibold text-xl my-2">Price: {item.price}</p>

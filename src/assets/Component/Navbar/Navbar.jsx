@@ -78,7 +78,8 @@ export default function Navbar() {
               </div>
 
               <div className="flex justify-center items-center">
-                <button className="text-xl text-orange-100 bg-orange-500 font-medium rounded py-1.5 px-4 ">Order Now</button>
+               <a href="/Touch"> <button className="text-xl text-orange-100 bg-orange-500 font-medium rounded 
+               py-1.5 px-4 ">Order Now</button></a>
               </div>
             </div>
           </nav>
@@ -87,3 +88,32 @@ export default function Navbar() {
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,59 @@
+.daily{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1.3px 1.3px black;
+  
+    }
+  
+    .dailyButton{
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+  
+    .daily-menu {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+    }
+  
+  .menu-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .menu-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+    
